@@ -1,0 +1,7 @@
+vehicle_id,type,location,status,assigned_incident
+A01,Ambulance,2,Arrived,114
+A02,Ambulance,5,Dispatched,111
+A03,Ambulance,7,En Route,
+F01,Fire Engine,3,Dispatched,113
+P01,Police,4,Available,
+P02,Police,6,Busy,

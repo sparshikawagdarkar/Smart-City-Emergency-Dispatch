@@ -1,0 +1,15 @@
+id,type,severity,people,location,priority,priority_label,vehicle_id,status,citizen_id,created_at,dispatched_at,en_route_at,arrived_at,completed_at,route,distance,eta_minutes,details
+101,Cardiac,Critical,2,7,73,Critical,-,Registered,,,,,,,,,,
+102,Fire,High,5,4,62,High,-,Registered,,,,,,,,,,
+103,Accident,Medium,2,6,33,Medium,-,Registered,,,,,,,,,,
+104,Medical,Low,1,3,10,Low,-,Registered,,,,,,,,,,
+105,Accident,High,3,2,44,MEDIUM,,Registered,,2026-10-20 23:48:30,,,,,,,,Please come fast
+106,Fire,Critical,5,1,65,CRITICAL,,Registered,,2026-10-20 23:49:44,,,,,,,,
+107,Cardiac,Critical,2,1,56,HIGH,,Registered,,2026-10-20 23:55:12,,,,,,,,
+108,Cardiac,Critical,2,7,56,HIGH,,Registered,,2026-10-20 23:56:49,,,,,,,,
+109,Cardiac,Critical,1,1,53,HIGH,,Registered,,2026-10-20 23:57:16,,,,,,,,
+110,Cardiac,Critical,1,7,53,HIGH,A02,Completed,,2026-10-21 00:00:50,2026-10-21 00:00:50,,,2026-10-21 00:03:59,5 → 7,4.0,12,
+111,Medical,Critical,4,4,62,HIGH,A02,Dispatched,,2026-10-21 01:18:36,2026-10-21 01:18:36,,,,5 → 4,2.0,6,
+112,Crime,Low,2,6,16,LOW,P01,Dispatched,,2026-10-21 09:47:35,2026-10-21 09:47:36,,,,4 → 5 → 6,5.0,15,
+113,Fire,Medium,3,3,29,MEDIUM,F01,Dispatched,,2026-10-21 13:32:35,2026-10-21 13:32:35,,,,3,0.0,1,
+114,Accident,Medium,1,1,23,LOW,A01,Dispatched,,2026-10-23 10:23:49,2026-10-23 10:23:49,,,,2 → 3 → 1,3.0,9,

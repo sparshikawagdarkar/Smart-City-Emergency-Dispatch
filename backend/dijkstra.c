@@ -1,0 +1,3 @@
+#include <limits.h>
+#include "dijkstra.h"
+int dijkstra(Graph*g,int start,int end,int*distance,int*path,int*path_len){if(start<1||end<1||start>g->n||end>g->n)return 0;int d[MAX_NODES],prev[MAX_NODES],used[MAX_NODES]={0};for(int i=0;i<g->n;i++){d[i]=INT_MAX/4;prev[i]=-1;}d[start-1]=0;for(int k=0;k<g->n;k++){int u=-1;for(int i=0;i<g->n;i++)if(!used[i]&&(u<0||d[i]<d[u]))u=i;if(u<0||d[u]>=INT_MAX/4)break;used[u]=1;for(int v=0;v<g->n;v++)if(g->weight[u][v]<1000000&&d[u]+g->weight[u][v]<d[v]){d[v]=d[u]+g->weight[u][v];prev[v]=u;}}if(d[end-1]>=INT_MAX/4)return 0;int rev[MAX_NODES],n=0;for(int at=end-1;at!=-1&&n<MAX_NODES;at=prev[at])rev[n++]=at+1;*path_len=n;for(int i=0;i<n;i++)path[i]=rev[n-i-1];*distance=d[end-1];return 1;}
